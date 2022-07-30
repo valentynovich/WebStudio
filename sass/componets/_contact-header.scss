@@ -1,0 +1,47 @@
+.contact {
+   margin: 0 0 64px 0;
+
+   @include tab {
+      margin: 0;
+   }
+
+   @include desk {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__item {
+      &+& {
+         margin: 32px 0 0 0;
+
+         @include tab {
+            margin: 10px 0 0 0;
+         }
+
+         @include desk {
+            margin: 0 0 0 30px;
+         }
+      }
+   }
+
+   &__link {
+
+      @include tab {
+         display: flex;
+         align-items: center;
+      }
+
+      transition: color $duration-hover-focus $timing-function-hover-focus;
+
+      &:hover,
+      &:focus {
+         color: #2196f3;
+      }
+   }
+
+   &__icon {
+      margin: 0 10px 0 0;
+      fill: currentColor;
+   }
+}

@@ -1,0 +1,9 @@
+.benefits {
+   @media screen and (max-width: 768px) {
+      text-align: center;
+   }
+
+   &__pre-title {
+      margin: 0 0 10px;
+   }
+}

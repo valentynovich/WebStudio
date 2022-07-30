@@ -1,0 +1,65 @@
+.footer {
+   background: #2F303A;
+   padding-bottom: 60px;
+   padding-top: 60px;
+   text-align: center;
+
+   @include desk {
+      text-align: start;
+   }
+
+   &__list {
+      @include tab {
+         padding: 0 50px;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         align-items: baseline;
+      }
+
+      @include desk {
+         padding: 0;
+      }
+   }
+
+   &__item {
+      @media screen and (max-width: 768px) {
+         &+& {
+            margin: 60px 0 0;
+         }
+      }
+
+      @include tab {
+
+         &:last-child {
+            margin: 60px auto 0;
+         }
+      }
+
+      @include desk {
+         &:last-child {
+            margin: 0;
+            flex-grow: 1;
+         }
+
+         &+& {
+            margin: 0 0 0 90px;
+         }
+      }
+   }
+
+   &__logo {
+      margin: 0 0 20px;
+   }
+}
+
+
+.address {
+   font-style: normal;
+
+   &__item {
+      &+& {
+         margin: 8px 0 0;
+      }
+   }
+}

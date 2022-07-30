@@ -1,0 +1,29 @@
+.header {
+  height: 60px;
+
+  @include tab {
+    height: 80px;
+  }
+
+  border-bottom: 1px solid #ECECEC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__container {
+    display: none;
+
+    @include tab {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+}

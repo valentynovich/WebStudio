@@ -1,0 +1,47 @@
+.web {
+
+   &__list {
+      margin: -15px;
+
+      @include tab {
+         flex-wrap: wrap;
+         display: flex;
+      }
+
+      &--clients {
+         flex-wrap: wrap;
+         display: flex;
+      }
+   }
+
+   &__item {
+      margin: 15px;
+      display: flex;
+
+      @include tab {
+         flex-basis: calc((100% - 60px) / 2);
+      }
+
+      @include desk {
+         flex-basis: calc((100% - 120px) / 4);
+      }
+
+      &--clients {
+         flex-basis: calc((100% - 60px) / 2);
+
+         @include tab {
+            flex-basis: calc((100% - 90px) / 3);
+         }
+
+         @include desk {
+            flex-basis: calc((100% - 180px) / 6);
+         }
+      }
+
+      &--portfolio {
+         @include desk {
+            flex-basis: calc((100% - 90px) / 3);
+         }
+      }
+   }
+}
