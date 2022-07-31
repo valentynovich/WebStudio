@@ -13,9 +13,14 @@
     fill: #212121;
     transition: fill $duration-hover-focus $timing-function-hover-focus;
 
-    &:hover,
-    &:focus {
-      fill: #2196f3;
+    // &:hover,
+    // &:focus {
+    //   fill: #2196f3;
+    // }
+
+    .button-modal:hover &,
+    .button-modal:focus & {
+      fill: #2196f3
     }
   }
 }
