@@ -1,7 +1,7 @@
 .hero {
    text-align: center;
    background-color: #2f303a;
-   background-image: linear-gradient(rgba(47, 48, 58, 0.45), rgba(47, 48, 58, 0.45)), url(../../img/hero/Hero.jpg);
+   background-image: linear-gradient(rgba(47, 48, 58, 0.45), rgba(47, 48, 58, 0.45)), url(../img/hero/Hero.jpg);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -14,18 +14,18 @@
    (-webkit-min-device-pixel-ratio: 2),
    (min-resolution: 192dpi),
    (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/Hero-2x.jpg);
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/Hero-2x.jpg);
    }
 
    @include tab {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/Hero-big-img.jpg);
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/Hero-big-img.jpg);
 
       @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
          background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../img/hero/Hero-big-2x-img.jpg);
+            url(../img/hero/Hero-big-2x-img.jpg);
       }
    }
 
