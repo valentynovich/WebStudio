@@ -21,6 +21,7 @@
 
 <body>
 
+
   <!------------------- header -------------->
 
   <header class="header">
@@ -88,7 +89,7 @@
           <ul class="contact list">
             <li class="contact__item">
               <a href="tel:+380991111111" class="contact__link contact__link--big link">
-                <nobr>+38 099 111 11 11</nobr>
+                +38 099 111 11 11
               </a>
             </li>
             <li class="contact__item">
@@ -137,53 +138,51 @@
         </button>
       </div>
       <div class="backdrop is-hidden" data-modal>
-        <div class="area" data-modal-close>
-          <div class="modal">
-            <button type="button" class="button-modal modal__button" data-modal-close>
-              <svg class="button-modal__icon" width="11" height="11">
-                <use href="./img/icons.svg#icon-Vectormodalwind"></use>
+        <div class="modal">
+          <button readonly type="button" class="button-modal modal__button" data-modal-close>
+            <svg class="button-modal__icon" width="11" height="11">
+              <use href="./img/icons.svg#icon-Vectormodalwind"></use>
+            </svg>
+          </button>
+          <h3 class="modal__title">
+            Оставьте свои данные, мы вам перезвоним
+          </h3>
+          <form action="#" class="form" method="post">
+            <label class="form__label">
+              Имя
+              <input type="text" name="name" class="form__input" required autofocus />
+              <svg class="form__icon" width="12" height="12">
+                <use href="./img/icons.svg#icon-modal-name"></use>
               </svg>
-            </button>
-            <h3 class="modal__title">
-              Оставьте свои данные, мы вам перезвоним
-            </h3>
-            <form action="#" class="form" method="post">
-              <label class="form__label">
-                Имя
-                <input type="text" name="name" class="form__input" required autofocus />
-                <svg class="form__icon" width="12" height="12">
-                  <use href="./img/icons.svg#icon-modal-name"></use>
-                </svg>
+            </label>
+            <label class="form__label">
+              Телефон
+              <input type="tel" name="tel" class="form__input" required />
+              <svg class="form__icon" width="13" height="13">
+                <use href="./img/icons.svg#icon-modal-tel"></use>
+              </svg>
+            </label>
+            <label class="form__label">
+              Почта
+              <input type="email" name="mail" class="form__input" required />
+              <svg class="form__icon" width="15" height="12">
+                <use href="./img/icons.svg#icon-modal-email"></use>
+              </svg>
+            </label>
+            <label class="form__label">
+              Комментарий
+              <textarea name="user-text" class="form__text" placeholder="Введите текст"></textarea>
+            </label>
+            <div class="div-checkbox">
+              <input type="checkbox" class="form__check visually-hidden" name="checkbox" required id="checkbox"
+                value="ok" />
+              <label for="checkbox" class="form__text-checkbox">
+                Соглашаюсь с рассылкой и принимаю
+                <span><a href="" class="link form__text-agreement">Условия договора</a></span>
               </label>
-              <label class="form__label">
-                Телефон
-                <input type="tel" name="tel" class="form__input" required />
-                <svg class="form__icon" width="13" height="13">
-                  <use href="./img/icons.svg#icon-modal-tel"></use>
-                </svg>
-              </label>
-              <label class="form__label">
-                Почта
-                <input type="mail" name="mail" class="form__input" required />
-                <svg class="form__icon" width="15" height="12">
-                  <use href="./img/icons.svg#icon-modal-email"></use>
-                </svg>
-              </label>
-              <label class="form__label">
-                Комментарий
-                <textarea name="user-text" class="form__text" placeholder="Введите текст"></textarea>
-              </label>
-              <div class="div-checkbox">
-                <input type="checkbox" class="form__check visually-hidden" name="checkbox" required id="checkbox"
-                  value="ok" />
-                <label for="checkbox" class="form__text-checkbox">
-                  Соглашаюсь с рассылкой и принимаю
-                  <span><a href="" class="link form__text-agreement">Условия договора</a></span>
-                </label>
-              </div>
-              <button type="submit" class="button">Отправить</button>
-            </form>
-          </div>
+            </div>
+            <button type="submit" class="button">Отправить</button>
+          </form>
         </div>
       </div>
     </section>

@@ -52,6 +52,7 @@
       left: 14px;
       top: 32px;
       transition: fill $duration-hover-focus $timing-function-hover-focus;
+      pointer-events: none;
 
       .form__input:focus+&,
       .form__input:hover+& {

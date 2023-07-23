@@ -12,7 +12,7 @@
    }
 
    @include desk {
-      font-size: 26px;
+      font-size: 210%;
       line-height: 1.19;
    }
 
@@ -55,6 +55,7 @@
    &--big {
       font-size: 34px;
       line-height: 1.18;
+      white-space: nowrap;
 
       @media screen and (max-width: 350px) {
          font-size: 24px;
