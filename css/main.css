@@ -825,7 +825,7 @@ button {
 .hero {
   text-align: center;
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/Hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.45), rgba(47, 48, 58, 0.45)), url(../../img/hero/Hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
