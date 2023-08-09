@@ -14,6 +14,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      -webkit-transition: background-color $timing-function-hover-focus $duration-hover-focus;
+      -moz-transition: background-color $timing-function-hover-focus $duration-hover-focus;
+      -ms-transition: background-color $timing-function-hover-focus $duration-hover-focus;
+      -o-transition: background-color $timing-function-hover-focus $duration-hover-focus;
       transition: background-color $timing-function-hover-focus $duration-hover-focus;
 
       &:hover,

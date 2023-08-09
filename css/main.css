@@ -690,6 +690,10 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  -moz-transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  -ms-transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  -o-transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .social-cards__link:hover, .social-cards__link:focus {
